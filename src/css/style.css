@@ -1,0 +1,34 @@
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+#Logo {
+  display: flex;
+  align-items: center;
+}
+
+#Logo img{
+  height: 50px;
+  width: auto;
+}
+
+#Logo span{
+    margin-left: 10px;
+    font-size: large;
+    font-weight: bold;
+}
+
+#List {
+    margin-right: 10px;
+}
+
+#List ul{
+    list-style: none;
+    display: inline-flex;
+}
+
+#List ul li{
+    margin-left: 50px;
+    font-size: large;
+}
