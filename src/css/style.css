@@ -18,6 +18,11 @@ nav {
   font-size: large;
   font-weight: bold;
 }
+nav ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 24px;
+}
 
 #List {
   margin-right: 10px;
@@ -143,4 +148,65 @@ body {
   .text {
     font-size: 11px;
   }
+}
+
+footer {
+  margin-top: 5%;
+  background-color: black;
+  color: white;
+  /* padding: 15px; */
+  display: flex;
+  /* margin-left: -20px;
+  margin-right: -20px;
+  margin-bottom:-20px; */
+}
+
+.footer_info {
+  width: 30%;
+  /* margin-right: 3%; */
+}
+
+.footer_info ul li {
+  list-style: none;
+}
+
+.footer_info ul li .footer_icon_image {
+  width: 52px;
+  height: 52px;
+}
+
+.connect_with_us ul li {
+  display: inline;
+}
+
+.card{
+width: 25%;
+box-shadow: 3px 5px lightslategray;
+}
+
+.card_image{
+  background-image: url("../../resources/images/ozan-safak-1jOQNSc4P-c-unsplash.jpg");
+  background-size: cover;
+  height: 200px;
+}
+
+.card_body .card_text-date{
+  display: flex;
+  justify-content: end;
+  font-size: 11px;
+  color: grey;
+}
+
+.card_footer{
+  display: flex;
+  justify-content: end;
+}
+
+.card_button{
+  background-color: blue;
+  color: white;
+  border-radius: 10px;
+  border-style: none;
+  padding: 10px;
+  font-weight: bold;
 }
