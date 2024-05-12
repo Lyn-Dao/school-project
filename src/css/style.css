@@ -182,6 +182,8 @@ footer {
 .card{
 width: 25%;
 box-shadow: 3px 5px lightslategray;
+margin: 5px;
+border: 1px solid;
 }
 
 .card_image{
@@ -211,7 +213,25 @@ box-shadow: 3px 5px lightslategray;
   font-weight: bold;
 }
 
-.tabble{
-  height: 250px;
-  /* width: ;  */
+#section-News{
+  display: flex;
+}
+
+.card_body, .card_footer {
+padding: 5px;
+}
+
+#section-fasilitas{
+  background-color: #f0f0f0;
+  margin-top: 5%;
+}
+
+.img-fasilitas{
+  height: 100px;
+  width: auto;
+}
+
+.fasilitas{
+  width: 20%;
+  text-align:center;
 }
