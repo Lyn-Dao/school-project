@@ -184,8 +184,27 @@ width: 25%;
 box-shadow: 3px 5px lightslategray;
 margin: 5px;
 border: 1px solid;
+flex: 0 0 calc(33.33% - 20px);
+margin: 10px;
+box-sizing: border-box;
 }
 
+.scroll-button {
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+#section-News::-webkit-scrollbar {
+  display: none;
+}
+
+#section-News {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
 .card_image{
   background-image: url("../../resources/images/ozan-safak-1jOQNSc4P-c-unsplash.jpg");
   background-size: cover;
@@ -212,9 +231,18 @@ border: 1px solid;
   padding: 10px;
   font-weight: bold;
 }
+#section-News-wrapper {
+  display: flex;
+  align-items: center;
+}
 
 #section-News{
   display: flex;
+  overflow-x: hidden; /* Change to hidden to prevent showing duplicate cards */
+    width: 100%;
+    max-width: 100%;
+    padding: 0 10px;
+    scroll-behavior: smooth; /* Smooth scrolling */
 }
 
 .card_body, .card_footer {
