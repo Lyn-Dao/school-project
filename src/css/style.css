@@ -6,6 +6,7 @@ nav {
 #Logo {
   display: flex;
   align-items: center;
+  margin-left: 15px;
 }
 
 #Logo img {
@@ -265,4 +266,49 @@ padding: 5px;
   width: 20%;
   text-align:center;
   margin-right: 1%;
+}
+
+#mobile-menuList {
+  display: none;
+}
+
+@media only screen and (max-width:720px) {
+  #List {
+      display: none;
+  }
+
+  #mobile-menuList {
+      display: inline;
+  }
+
+  .checkbtn {
+      font-size: 1.5rem;
+      color: white;
+      cursor: pointer;
+  }
+
+  #check:checked~.nav-mobile {
+      display: block;
+  }
+
+  .nav-mobile {
+      display: none;
+  }
+
+  .nav-mobile {
+      position: absolute;
+      top: 2rem;
+      right: 0;
+      background: #222831;
+      z-index: 1;
+      width: 150px;
+  }
+
+  .nav-mobile a {
+      color: #fff;
+      padding: 1rem 1.5rem;
+      display: block;
+      list-style: none;
+      text-decoration: none;
+  }
 }
