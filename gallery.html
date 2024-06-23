@@ -3,6 +3,7 @@
 <head>
     <title>Gallery Martial School</title>
 <link rel="stylesheet" href="./src/css/style.css">
+<link rel="stylesheet" href="./src/css/gallery.css">
 </head>
 <body>
     <nav>
@@ -20,21 +21,55 @@
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </div>
+
+      <div id="mobile-menuList">
+        <input type="checkbox" id="check" hidden=true>
+        <label for="check" class="checkbtn">
+            <img src="./resources/images/list.png
+            " alt="icon" width="25px" height="25px">
+        </label>
+        <div class="nav-mobile">
+            <a href="/">
+                <li style="font-weight: bold;">Gallery</li>
+            </a>
+            <a href="./src/view/profile.html">
+                <li>Profile</li>
+            </a>
+            <a href="./src/view/gallery.html">
+                <li>Gallery</li>
+            </a>
+            <a href="./src/view/contact.html">
+                <li>Contact</li>
+            </a>
+        </div>
     </nav>
 
-    <header>
+
+    <header class="hi">
         <h2>My Gallery</h2>
-        <p>I build this web when now I'm 12 years old</p>
+        <div id="gallery_filter">
+          <button  class="button_filter active" onclick="filterSelection('all')">All</button>
+          <button class="button_filter" onclick="filterSelection('contentA')">Trainning</button>
+          <button class="button_filter" onclick="filterSelection('contentB')"">Meditation</button>
+        </div>
     </header>
 
-    <section class="tabble">
-        <!-- <table border style="border-collapse: collapse;">
-            <tr>
-                <td><img src="./resources/images/study_1.jpg" alt="gbr 1"></td>
-                <td><img src="./resources/images/study_2.jpg" alt="gbr 2"></td>
-            </tr> -->
+    <section>
+      <table>
+        <tr>
+            <td class="gallery_content contentA"><img src="./resources/images/diogo-nunes-DgMotiPocGU-unsplash.jpg" alt="image1" class="class" style="width:150px ; height:150px ;">
+            </td>
+            <td class="gallery_content contentB"><img src="./resources/images/thao-lee-w29-TNxFaGg-unsplash.jpg" alt="image2" class="class" style="width:150px ; height:150px ;">
+            </td>
+            <td class="gallery_content contentA"><img src="./resources/images/thao-lee-1IPV7Slrz7w-unsplash.jpg" alt="image3" class="class" style="width:150px ; height:150px ;">
+            </td>
+            <td class="gallery_content contentB"><img src="./resources/images/thao-lee-HHechVrIhf8-unsplash.jpg" alt="image4" class="class" style="width:150px ; height: 150px;">
+            </td>
+        </tr>
+    </table>
+      </table>
     </section>
-
+     
     <footer>
         <div class="footer_info">
             <h3>Help</h3>
@@ -106,6 +141,8 @@
             </div>
           </div>
     </footer>
+
+    <script src="./src/js/gallery.js"></script>
     
 </body>
 </html>

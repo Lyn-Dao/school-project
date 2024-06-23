@@ -312,3 +312,24 @@ padding: 5px;
       text-decoration: none;
   }
 }
+.hi{
+  margin-left: 15px;
+}
+
+.button_filter{
+  background-color:rgba(255, 0, 0, 0.753);
+  border-radius: 5px;
+  border-style: none;
+  color: #fff;
+  padding: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.class{
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+
+  border-radius: 5px;
+}
